@@ -1,0 +1,23 @@
+{
+    "paths": {
+      "raw_data": "data/raw/",
+      "processed_data": "data/processed/",
+      "logs": "logs/",
+      "model": "data/model/"
+    },
+    "files": {
+      "file_list": "file_list.json",
+      "train_data": "train_data.csv",
+      "test_data": "test_data.csv",
+      "h5_file": "data.h5",
+      "word_index": "wordIndex.json",
+      "stopwords": "stopwords.txt"
+    },
+    "model": {
+      "embedding_dim": 200,
+      "max_len": 30,
+      "batch_size": 256,
+      "epochs": 20,
+      "patience": 5
+    }
+}

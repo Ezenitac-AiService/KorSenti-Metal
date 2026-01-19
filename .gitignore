@@ -1,0 +1,23 @@
+# System
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Project Artifacts
+archive_artifacts/
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Data
+data/processed/*
+!data/processed/.gitkeep
+data/model/*
+!data/model/.gitkeep
+
+# Note: data/raw and data/sample are tracked

@@ -1,8 +1,0 @@
-2025-01-26 16:57:07,132 - INFO - [INFO] 감성 분석 파이프라인 시작.
-2025-01-26 16:57:07,132 - INFO - [INFO] data_merge.py 실행 시작...
-2025-01-26 16:57:07,148 - ERROR - [ERROR] data_merge.py 실행 실패.
-2025-01-26 16:57:07,148 - ERROR - [STDERR]
-/opt/homebrew/Caskroom/miniconda/base/envs/sentiment_env/bin/python: can't open file '/Users/dev/CODE/sentiment_analysis_project/data_merge.py': [Errno 2] No such file or directory
-
-2025-01-26 16:57:07,148 - ERROR - [ERROR] data_merge.py 실행 중 오류 발생. 파이프라인을 중단합니다.
-2025-01-26 16:57:07,148 - INFO - [INFO] 감성 분석 파이프라인 완료.

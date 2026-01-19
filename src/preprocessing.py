@@ -79,7 +79,12 @@ def process_text_batch(data_chunk):
     return [preprocess_text(text, stopwords) for text in tqdm(data_chunk, desc="Processing")]
 
 def parallel_process_texts(data):
-    """ 병렬 처리를 이용한 텍스트 전처리 """
+    """ 병렬 처리를 이용한 텍스트 전처리 (데이터가 적으면 단일 프로세스 실행) """
+    if len(data) < 1000:
+        logging.info("데이터 크기가 작아 단일 프로세스로 처리합니다.")
+        stopwords = load_stopwords()
+        return [preprocess_text(text, stopwords) for text in tqdm(data, desc="Processing")]
+
     cpu_count = max(1, multiprocessing.cpu_count() - 2)
     chunk_size = len(data) // cpu_count + 1
 

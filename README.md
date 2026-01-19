@@ -58,7 +58,7 @@ brew install openjdk@11
 
 ```bash
 # 파이프라인 전체 실행
-python main.py
+python src/main.py
 ```
 > **참고**: `main.py`는 데이터 병합 -> 전처리 -> 학습 -> 예측을 순차적으로 실행합니다.
 

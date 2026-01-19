@@ -1,7 +1,10 @@
-tensorflow-macos
-tensorflow-metal
-numpy
-pandas
-scikit-learn
-joblib
-matplotlib
+tensorflow-macos>=2.10.0
+tensorflow-metal>=0.6.0
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.0.0
+joblib>=1.2.0
+matplotlib>=3.5.0
+konlpy>=0.6.0
+h5py>=3.7.0
+tqdm>=4.64.0pyarrow

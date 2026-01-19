@@ -11,10 +11,10 @@ logging.basicConfig(
 
 # 실행할 스크립트 목록
 scripts = [
-    "data_merge.py",
-    "preprocessing.py",
-    "model_fit.py",
-    "predict_sentiment.py"
+    "src/data_merge.py",
+    "src/preprocessing.py",
+    "src/model_fit.py",
+    "src/predict_sentiment.py"
 ]
 
 def run_script(script):

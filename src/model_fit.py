@@ -102,8 +102,8 @@ logging.info("[INFO] 콜백 설정 완료.")
 logging.info("[INFO] 모델 학습 시작...")
 history = model.fit(
     X_train, y_train,
-    epochs=20,
-    batch_size=128,  # M1 Mac의 메모리 제한을 고려하여 감소
+    epochs=config['model']['epochs'],
+    batch_size=config['model']['batch_size'],
     validation_split=0.2,
     callbacks=callbacks
 )
